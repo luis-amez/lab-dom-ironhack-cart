@@ -3,15 +3,21 @@ input {
 }
 
 .container {
-
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .info-container {
-
+  margin: 3rem 0;
 }
 
 .item {
-
+  display: flex;
+  text-align: left;
+  align-items: center;
+  /*justify-content: space-between;*/
+  margin: 1rem 0;
 }
 
 .row {
@@ -19,10 +25,10 @@ input {
 }
 
 .col-xs-2 {
-
+  width: 20%;
 }
 
-.col-xs-3 {
+/*.col-xs-3 {
 
 }
 
@@ -36,7 +42,7 @@ input {
 
 .col-xs-7 {
 
-}
+}*/
 
 .btn {
   display: inline-block;
@@ -61,17 +67,26 @@ input {
 }
 
 .btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
 }
 
 .btn-delete {
-    color: #fff;
-    background-color: #CF000F;
-    border-color: #CF000F;
+  color: #fff;
+  background-color: #CF000F;
+  border-color: #CF000F;
 }
 
 .quantity {
   margin: 0 5px;
+}
+
+.money::before {
+  content: "$";
+}
+
+.total-price,
+.delete-button {
+  text-align: right;
 }
